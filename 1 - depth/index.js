@@ -1,7 +1,4 @@
-const fs = require('fs');
-
-const data = fs.readFileSync('data.txt', 'utf-8');
-const depths = data.split('\n');
+const { depths } = require('../data');
 
 let depthIncreases = 0;
 let lastDepth = parseInt(depths[0]);
